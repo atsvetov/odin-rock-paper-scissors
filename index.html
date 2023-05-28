@@ -5,9 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="game-logic.js"></script>
+    <link rel="stylesheet" href="./style/rps-style.css">
+    <script src="./scripts/game-logic.js" defer></script>
 </head>
 <body>
-    
+    <div class="scores">
+        <div class="participants">
+            <div class="player_score">
+                <div class="participant">Player</div>
+                <div class="score_label">0</div>
+            </div>
+            <div class="cpu_score">
+                <div class="participant">CPU</div>
+                <div class="score_label">0</div>
+            </div>
+        </div>
+    </div>
+    <div class="game">
+        <div class="player_choice"><img class="choice_img" src=""></div>
+        <div class="vs_label">VS</div>
+        <div class="cpu_choice"><img class="choice_img" src=""></div>
+    </div>
+    <div class="buttons">
+        <button id="rock_button" class="play_button"><img src="./images/rock-button.png"/></button>
+        <button id="paper_button" class="play_button"><img src="./images/paper-button.png"/></button>
+        <button id="scissors_button" class="play_button"><img src="./images/scissors-button.png"/></button>
+    </div>
+    <div class="conclusion">
+        <div class="conclusion_msg"></div>
+        <button id="reset"><img src="./images/reset.png"></button>
+    </div>
 </body>
 </html>
